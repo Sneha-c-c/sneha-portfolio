@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Container } from "@/components/ui/Container";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LeetcodeIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { Reveal } from "@/components/effects/Reveal";
 
 type Status = "idle" | "submitting" | "sent" | "drafted" | "error";
@@ -99,9 +99,10 @@ export function Contact() {
             </h2>
             <div className="accent-gradient mt-3 h-1 w-16 rounded-full" />
             <p className="text-fg-muted mt-5 max-w-md text-base leading-relaxed">
-              Have a project, opportunity, or idea in mind? Let’s connect and
-              talk about building scalable, reliable, and user-focused
-              applications.
+              Open to Software Development Engineer, Full Stack, and Forward
+              Deployed Engineer roles. Have a project, opportunity, or idea in
+              mind?
+              Let’s connect.
             </p>
 
             <ul className="mt-10 space-y-4">
@@ -143,7 +144,7 @@ export function Contact() {
                 </div>
               </li>
 
-              <li className="flex gap-3 pt-2">
+              <li className="flex flex-wrap gap-3 pt-2">
                 <a
                   href={profile.github}
                   target="_blank"
@@ -159,6 +160,14 @@ export function Contact() {
                   className="border-border text-fg-muted hover:border-accent/50 hover:bg-accent-soft hover:text-accent inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors"
                 >
                   <LinkedinIcon size={16} /> LinkedIn
+                </a>
+                <a
+                  href={profile.leetcode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-border text-fg-muted hover:border-accent/50 hover:bg-accent-soft hover:text-accent inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-colors"
+                >
+                  <LeetcodeIcon size={16} /> LeetCode
                 </a>
               </li>
             </ul>

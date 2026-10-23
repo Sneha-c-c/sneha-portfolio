@@ -14,7 +14,7 @@ export function JsonLd() {
       addressCountry: "IN",
     },
     url: "https://snehacc.dev",
-    sameAs: [profile.github, profile.linkedin],
+    sameAs: [profile.github, profile.linkedin, profile.leetcode],
   };
 
   return (

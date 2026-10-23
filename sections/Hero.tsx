@@ -6,7 +6,7 @@ import { ArrowRight, FileText, Mail } from "lucide-react";
 import { profile } from "@/data/profile";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
-import { GithubIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
+import { GithubIcon, LeetcodeIcon, LinkedinIcon } from "@/components/ui/SocialIcons";
 import { LineWave } from "@/components/effects/LineWave";
 import { Typewriter } from "@/components/effects/Typewriter";
 
@@ -79,6 +79,10 @@ export function Hero() {
             </span>
           </p>
 
+          <p className="text-fg-muted mt-4 max-w-xl text-sm sm:text-base">
+            {profile.openTo}
+          </p>
+
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#projects">
               View Projects <ArrowRight size={16} />
@@ -128,6 +132,15 @@ export function Hero() {
                 aria-label="LinkedIn"
               >
                 <LinkedinIcon size={18} />
+              </a>
+              <a
+                href={profile.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-border bg-bg-elevated/70 text-fg hover:border-accent/60 hover:bg-accent-soft hover:text-accent inline-flex h-11 w-11 items-center justify-center rounded-full border backdrop-blur-sm transition-colors"
+                aria-label="LeetCode"
+              >
+                <LeetcodeIcon size={18} />
               </a>
             </div>
           </div>

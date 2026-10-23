@@ -8,6 +8,7 @@ export const profile = {
   phone: "7348905250",
   linkedin: "https://linkedin.com/in/sneha-c-c",
   github: "https://github.com/Sneha-c-c",
+  leetcode: "https://leetcode.com/u/snehacc2002/",
   resumeUrl:
     "https://drive.google.com/file/d/11YzmOflH1RuRtOBN7NEU8pFbjrocNgR_/view?usp=drivesdk",
   yearsExperience: "3+",
@@ -15,6 +16,8 @@ export const profile = {
     "Full Stack Software Engineer with 3+ years of experience building scalable, high-performance enterprise applications using the MERN stack. Experienced in secure API development, workflow automation, AWS, JWT/RBAC, and end-to-end feature development.",
   heroSupport:
     "Building scalable full-stack applications with React, Next.js, Node.js, MongoDB, and Python — plus LLM-powered and agentic AI workflows.",
+  openTo:
+    "Open to Software Development Engineer, Full Stack, and Forward Deployed Engineer roles.",
   // Wrap text in **double asterisks** to render it bold.
   about: [
     "I’m a Full Stack Software Engineer with 3+ years of experience building scalable, reliable, and user-focused web applications. I work across the full development lifecycle, from creating responsive frontend experiences to building robust backend services, APIs, and data-driven systems.",
